@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>설치 현황</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .image-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      padding: 15px;
+    }
+
+    .image-gallery-grid img {
+      width: 100%;
+      height: 300px;
+      object-fit: contain; /* 🔑 잘리지 않고 전체 표시 */
+      background-color: #fff;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .image-gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h2>설치 현황 - 복합플랜터 C-1</h2>
+      <p class="manager-info">관리자: <span id="logged-user"></span></p>
+    </div>
+    <div class="header-right">
+      <button onclick="window.location.href='planter.html'">뒤로가기</button>
+    </div>
+  </header>
+
+  <!-- 4장 이미지 -->
+  <div class="image-gallery-grid">
+    <img src="images/keymap.png" alt="키맵" />
+    <img src="images/installed.png" alt="현장사진" />
+    <img src="images/drawing1.png" alt="도면1" />
+    <img src="images/drawing2.png" alt="도면2" />
+  </div>
+</body>
+</html>

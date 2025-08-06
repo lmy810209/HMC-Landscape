@@ -1,0 +1,172 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002C5F;
+  color: white;
+  padding: 15px 20px;
+  flex-wrap: wrap;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-left h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.manager-info {
+  margin: 2px 0 0 0;
+  font-size: 15px;
+  color: #cce0ff;
+}
+
+.header-right button {
+  background-color: white;
+  color: #002C5F;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.header-right button:hover {
+  background-color: #ddd;
+}
+
+/* 로그인 화면 */
+#login-screen, .login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #002C5F, #00509E);
+  color: white;
+  padding: 20px;
+}
+
+#login-screen h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+#login-screen input, #login-screen select {
+  padding: 10px;
+  margin: 5px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#login-screen button {
+  background-color: #00509E;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 100px;
+}
+
+#login-screen button:hover {
+  background-color: #003E7E;
+}
+
+/* 기본 정보 카드 */
+.info-section {
+  background: white;
+  border: 1px solid #ddd;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+/* 공통 카드 스타일 */
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #002C5F;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+textarea,
+input[type="text"],
+input[type="file"],
+input[type="password"],
+select {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+button {
+  background-color: transparent;
+  color: #002C5F;
+  border: 1px solid #002C5F;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+button:hover {
+  background-color: #002C5F;
+  color: white;
+}
+
+/* 설치 현황 - 한 줄 제목 + 버튼 */
+.install-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border: 1px solid #ddd;
+  margin: 15px;
+  padding: 15px 20px;
+  border-radius: 6px;
+}
+
+.install-btn-inline {
+  background-color: #00509E;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.install-btn-inline:hover {
+  background-color: #003E7E;
+}
